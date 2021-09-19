@@ -1,2 +1,2 @@
 # Computer-Vision
-CV Task
+![mindmap](/images/CV_Task.svg)

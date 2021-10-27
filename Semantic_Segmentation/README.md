@@ -7,7 +7,7 @@
     - 객체의 크기가 크거나 작은 경우 예측을 잘 하지 못함
     - Object의 디테일한 모습이 사라지는 문제 발생
 
-## Decoder 개선
+## 1. Decoder 개선
 ### DeconvNet
 - CNN은 VGG16을 사용
     - 13개의 층으로 이루어짐
@@ -32,7 +32,7 @@
     - 학습 및 추론 시간 감소
 - DecovnNet의 Decoder에서 Deconvolution을 사용했다면 SegNet에서는 Convolution을 사용
 
-## Skip Connection 활용
+## 2. Skip Connection 활용
 ### FC DenseNet
 - Skip Connnection을 활용
 - Dense Block을 사용
@@ -42,7 +42,7 @@
 - Overlap-tile strategy를 사용
 - 객체 경계를 잘 구분하도록 Weighted Loss를 제시
 
-## Receptive Field 확장
+## 3. Receptive Field 확장
 ### DeepLab v1
 - Conditional Random Fields (CRFs)를 후처리로 사용
 - Dilated Convolution을 사용하여 더 넗은 Receptive filed를 고려(parameter 수는 늘어나지 않음)
